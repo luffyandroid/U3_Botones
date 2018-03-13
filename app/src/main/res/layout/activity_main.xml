@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.didact.u3_botones.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/br_mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/br_hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hombre" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preferencias:" />
+
+    <CheckBox
+        android:id="@+id/cb_musica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Musica" />
+
+    <CheckBox
+        android:id="@+id/cb_cine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cine" />
+
+    <CheckBox
+        android:id="@+id/cb_deporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deporte" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:onClick="pulsarCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botoncancelar" />
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botonaceptar" />
+
+    <Spinner
+        android:id="@+id/sp_provincias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_provincia"
+        android:onClick="seleccionarProvincia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar" />
+</LinearLayout>

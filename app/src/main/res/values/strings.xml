@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">U3_Botones</string>
+   <string name="botonaceptar">Aceptar</string>
+    <string name="botoncancelar">Cancelar</string>
+</resources>
